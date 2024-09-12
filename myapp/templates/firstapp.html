@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Names</h1>
+  
+<ul>
+  {% for name in mynames %}
+    <!-- <li>{{ name.firstName }} {{ name.lastName }}</li> -->
+    <li><a href="details/{{ name.id }}"></href>{{ name.firstName }} {{ name.lastName }}</a></li> 
+  {% endfor %}
+</ul>
+
+<!--the % symbols are django tags-->
+
+</body>
+</html>
